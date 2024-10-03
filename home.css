@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Oswald:wght@200..700&display=swap');
+
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #0C090A;
+    color: antiquewhite;
+    position:relative;
+    overflow-x: hidden;
+    padding: 10px 100px;
+    scroll-behavior: smooth;
+}
+/***************************     Nav-Bar     ***************************/
+
+.logo{
+    font-size: 44px;
+    font-family: "Black Ops One", system-ui;
+    cursor: pointer;
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.bg-fade1{
+    height: 1000px;
+    width: 1000px;
+    position: absolute;
+    filter: blur(300px);
+    background: #CF71AF;
+    border-radius: 50%;
+    top: -700px;
+    left: 30%;
+    z-index: -100;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 15px;
+    transition: 0.2s ease-in-out;
+}
+ul li a:hover{
+    color: #CF71AF;
+}
+
+nav button{
+    padding: 7px 25px;
+    background: transparent;
+    border-radius: 50px;
+    border: 1px solid #CF71AF;
+    font-weight: 500;
+    color: #CF71AF;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+nav button:hover{
+    background: #CF71AF;
+    color:antiquewhite;
+}
+
+
+/***************************     Hero-Section     ***************************/
+
+.hero{
+    width: 450px;
+    padding-left: 10px;
+    margin-top: 15%;
+}
+
+#heroText{
+    position:relative;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 45px;
+}
+
+.hero p{
+    color: antiquewhite;
+    font-size: 15px;
+    line-height: 18px;
+    margin: 50px 0 30px 0;
+}
+
+.startBtn{
+    padding: 7px 25px;
+    background: #CF71AF;
+    color: antiquewhite;
+    border-radius: 50px;
+    border: 1px solid #CF71AF;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.startBtn:hover{
+    background: transparent;
+    color: #CF71AF;
+    border: 1px solid #CF71AF;
+}
+
+/***************************     Numbers-Section     ***************************/
+
+#Numbers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #3D54435F;
+    padding: 50px 120px;
+    border-radius: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.info h3{
+    font-size: 30px; 
+    font-family: "Oswald", sans-serif;
+}
+
+.info span{
+    color: #CF71AF;
+    font-size: 15px;
+    font-family: "Oswald", sans-serif;
+
+}
+
+.info .star{
+    position: absolute;
+    top: -30px;
+    left: 100px;
+    font-size: 16px;
+}
+
+.bg-fade2{
+    height: 1300px;
+    width: 1000px;
+    position: absolute;
+    filter: blur(300px);
+    background: #CF71AF;
+    border-radius: 50%;
+    top: 1200px;
+    left: 60%;
+    z-index: -100;
+}
