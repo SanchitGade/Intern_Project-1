@@ -367,3 +367,56 @@ nav button:hover{
 .open-card.popup_open {
     transform: translate(-50%, -50%) scale(1);
 }
+
+
+/* ************************** Team-Section ************************** */
+.team-container {
+    padding: 50px 0;
+    text-align: center;
+    margin-top: 12%;
+    
+}
+
+.team-container h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color:antiquewhite;
+}
+
+.team-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.team-member {
+    background-color: #1a1d29;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    margin-bottom: 5px;
+    color:antiquewhite;
+}
+
+.team-member p {
+    color: #CF71AF;
+}
