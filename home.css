@@ -87,27 +87,39 @@ nav button:hover{
 
 /***************************     Hero-Section     ***************************/
 
-.hero{
-    width: 450px;
-    padding-left: 10px;
-    margin-top: 15%;
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    height: calc(100vh - 100px); /* Adjust based on your navbar height */
 }
 
-#heroText{
-    position:relative;
+.hero-content {
+    width: 45%;
+}
+
+.stag {
+    max-width: 450px;
+}
+
+#heroText {
+    position: relative;
     font-size: 40px;
     font-weight: 600;
     line-height: 45px;
+    display: block;
+    margin-bottom: 20px;
 }
 
-.hero p{
+.hero p {
     color: antiquewhite;
     font-size: 15px;
     line-height: 18px;
-    margin: 50px 0 30px 0;
+    margin: 30px 0;
 }
 
-.startBtn{
+.startBtn {
     padding: 7px 25px;
     background: #CF71AF;
     color: antiquewhite;
@@ -116,7 +128,8 @@ nav button:hover{
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
-.startBtn:hover{
+
+.startBtn:hover {
     background: transparent;
     color: #CF71AF;
     border: 1px solid #CF71AF;
@@ -127,6 +140,7 @@ nav button:hover{
     height: 600px;
     margin-bottom: 130px;
 }
+
 
 /***************************     Numbers-Section     ***************************/
 
@@ -421,7 +435,7 @@ nav button:hover{
     color: #CF71AF;
 }
 
-/* *********     Testimonial-Section     ********* */
+/******************     Testimonial-Section     ****************** */
 .testimonials-section {
     padding: 100px 0;
     position: relative;
@@ -576,6 +590,7 @@ nav button:hover{
     transform: scale(1.2);
 }
 
+
 /* Responsive Design */
 @media (max-width: 991px) {
     .testimonial-card {
@@ -617,5 +632,158 @@ nav button:hover{
     
     .testimonial-card {
         padding: 25px 20px;
+    }
+}
+
+.bg-fade3{
+    height: 1000px;
+    width: 1000px;
+    position: absolute;
+    filter: blur(300px);
+    background: #CF71AF;
+    border-radius: 50%;
+    bottom: 50px;
+    right: 60%;
+    z-index: -100;
+}
+
+/* **************************     Footer     ************************** */
+footer {
+    background-color: #0C090A;
+    width: 100%;
+    position: relative;
+    padding: 50px 0;
+    margin-top: 100px;
+    border-radius: 15px;
+}   
+
+.top-footer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto 50px;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.top-footer div {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+}
+
+.top-footer div:first-child {
+    width: 250px;
+    gap: 15px;
+}
+
+.top-footer div h3 {
+    color: antiquewhite;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.top-footer div a {
+    color: rgba(244, 237, 228, 0.421);
+    text-decoration: none;
+    margin-bottom: 12px;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.top-footer div a:hover {
+    color: #CF71AF;
+}
+
+.bottom-footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid rgba(250, 235, 215, 0.1);
+    color: rgba(250, 235, 215, 0.595);
+    font-size: 14px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .top-footer {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 30px;
+    }
+    
+    .top-footer div {
+        width: 100% !important;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #spline-container {
+        width: 100%;
+        height: 400px;
+    }
+
+    .partner-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    .logo {
+        font-size: 32px;
+    }
+
+    #heroText {
+        font-size: 32px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .card {
+        min-width: 100%;
+    }
+
+    .team-member {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 40px 15px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .info h3 {
+        font-size: 28px;
+    }
+
+    .partner-info {
+        min-width: 100%;
     }
 }
