@@ -4,6 +4,8 @@
 ## Project Overview
 This is a modern, responsive website developed with my team during our internship at Zidio, showcasing the company's digital services and team capabilities. The project demonstrates a sleek, dark-themed design with interactive elements and smooth animations.
 
+Link - https://sanchitgade.github.io/Intern_Project-1/index.html
+
 ## Technologies Used
 - HTML5
 - CSS3
